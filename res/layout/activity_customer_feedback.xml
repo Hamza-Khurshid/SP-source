@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1887f"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".Activities.CustomerFeedback">
+
+    <EditText
+        android:id="@+id/feedTitleET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_back_lined"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:hint="Add Title Here..."/>
+
+    <EditText
+        android:id="@+id/feedDescET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:scrollbars="vertical"
+        android:maxLines="15"
+        android:gravity="top"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_back_lined"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Add Description Here..."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="addFeedBack"
+        android:text="Send"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/white_back"/>
+
+</LinearLayout>

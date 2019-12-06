@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tayyab.khan.fyp.smartparking">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.ShowLocation"
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_show_location">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tayyab.khan.fyp.smartparking.Activities.BookPlace" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".Activities.SelecParkingPlace"
+            android:label="@string/title_activity_selec_parking_place">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tayyab.khan.fyp.smartparking.Activities.ManageParking" />
+        </activity>
+        <activity
+            android:name=".Activities.FeedbackDetails"
+            android:parentActivityName=".Activities.SeeFeedback"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SeeFeedback"
+            android:parentActivityName=".Activities.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.CustomerFeedback"
+            android:parentActivityName=".Activities.UserDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.MyBookings"
+            android:parentActivityName=".Activities.UserDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.BookPlace"
+            android:parentActivityName=".Activities.SearchPlace"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SearchPlace"
+            android:parentActivityName=".Activities.UserDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.BookingDetails"
+            android:parentActivityName=".Activities.ManageBookings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ManageBookings"
+            android:parentActivityName=".Activities.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.GeneralInformation"
+            android:parentActivityName=".Activities.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SeeUserDetails"
+            android:parentActivityName=".Activities.ManageUsers"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.UpdateParkingPlace"
+            android:parentActivityName=".Activities.AllParkingPlaces"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.AllParkingPlaces"
+            android:parentActivityName=".Activities.AllParkingSlots"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.AllParkingSlots"
+            android:parentActivityName=".Activities.ManageParking"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" AIzaSyCYvUGsQBduA_F9aMKq6r5ObM2NGnIbhJE -->
+        <activity
+            android:name=".Activities.AddParkingSlots"
+            android:label="Parking Areas"
+            android:parentActivityName=".Activities.ManageParking"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ManageParking"
+            android:parentActivityName=".Activities.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ManageUsers"
+            android:parentActivityName=".Activities.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.AdminDashboard"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".Activities.UserDashboard"
+            android:label="@string/title_activity_user_dashboard"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".Activities.SignupActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

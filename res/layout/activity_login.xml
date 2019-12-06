@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center"
+    tools:context=".Activities.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/emailETAL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:maxLength="12"
+            android:digits="01234567890"
+            android:inputType="phone"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_back_lined"
+            android:hint="Phone"/>
+
+        <EditText
+            android:id="@+id/passwordETAL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:text=""
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_back_lined"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onLoginClick"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Login"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:onClick="NavigateToSignUp"
+            android:text="Not member? Signup!"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.UserDashboard"
+    tools:showIn="@layout/app_bar_user_dashboard">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchETSP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Search By Area, Slot, Place"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="60dp"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/searchBtnSP"
+            android:layout_marginLeft="-60dp"
+            style="?android:buttonBarButtonStyle"
+            android:paddingBottom="17dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_search_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/noPlaceFoundTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Place Found!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

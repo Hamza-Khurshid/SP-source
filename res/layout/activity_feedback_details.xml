@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Activities.FeedbackDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:text="Title: "/>
+
+                    <TextView
+                        android:id="@+id/titleFDs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdd"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:text="Desc: "/>
+
+                    <TextView
+                        android:id="@+id/descFDs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="asdasdasdasdasdassdsdsdsdsdsdsdsdsdsdsdsdsdsdsddasdasdasdasdasdasdasdd asdasdasdasdasdasdsdsdsdsdsdasdasdasdasdassdsddasdsdsdsdsd assdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdddasdasdasdasdasdasdasdfasdasdasda assfsfsfsfssfssfsfsssfsfsfsfsfsfsfssdasdasdasdasfsfsfsfsfsdasdasdasdasdasdasdasd asdasdasdasdasdffffffffasdasdasdasdasdasdasd."
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_back"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:onClick="deleteFeedback"
+            android:text="Delete Feedback"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</ScrollView>

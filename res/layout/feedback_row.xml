@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvFR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdfj jlksdjf sdjfkjsd"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/descTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdfj jlksdjf sdjfkjsd sdfj jlksdjf sdjfkjsd sdfj jlksdjf sdjfkjsd"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="12 May 2019"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:layout_below="@id/ll2"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

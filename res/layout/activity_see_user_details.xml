@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".Activities.SeeUserDetails">
+
+    <TextView
+        android:id="@+id/usernameTVSUD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Faizan Mostafa"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/usernameTVSUD">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Phone Number: "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/phoneNoTVSUD"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0306-4286860"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/ll">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Current Bookings: "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/bookingsTVSUD"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="05"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/ll1"
+        android:textColor="@color/white"
+        android:onClick="deleteUser"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        android:text="Delete"/>
+
+</RelativeLayout>

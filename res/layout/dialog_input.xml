@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Parking Area"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/dialoge_inputET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Parking Area Name"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

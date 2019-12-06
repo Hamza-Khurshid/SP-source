@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context=".Activities.AddParkingSlots">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/areaTVAPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Parking Place to Area Zero Point"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="18dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/selectLocationBtnAPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Location of Parking Place"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:onClick="onSelectLocationClicked"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Enter  name of  Parking  Slot: " />
+
+            <EditText
+                android:id="@+id/namePSlotETAPS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:gravity="left"
+                android:hint="PS101" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Enter name of Parking Place: " />
+
+            <EditText
+                android:id="@+id/idPPlaceETAPS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:gravity="left"
+                android:hint="PP904" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/isRoofedCBAPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Place is roofed? If yes then check!"/>
+
+        <TextView
+            android:text="@string/parking_place_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:onClick="onAddParkingSlotClicked"
+            android:background="@color/colorAccent"/>
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--android:id="@+id/addParkingSlot"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:src="@drawable/ic_add_w"-->
+        <!--android:layout_margin="15dp"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

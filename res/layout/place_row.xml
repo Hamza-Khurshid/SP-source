@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_Place_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="4dp"
+    android:background="#48A23F"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/holderTVPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Holder: 12455624sdf"/>
+
+    <TextView
+        android:id="@+id/areaTVPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Area: Main Parking"/>
+
+    <TextView
+        android:id="@+id/slotTVPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Slot: PS102"/>
+
+    <TextView
+        android:id="@+id/placeTVPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Place: PP330"/>
+
+    <TextView
+        android:id="@+id/isRoofedTVPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="IsRoofed: No"/>
+
+</LinearLayout>

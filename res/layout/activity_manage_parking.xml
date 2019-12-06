@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".Activities.ManageParking">
+
+    <TextView
+        android:id="@+id/notFoundTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nothing found!"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parkingAreasRVAMP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarAMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addParkingAreaFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onAddParingAreaClicked"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_add_w"/>
+
+</RelativeLayout>

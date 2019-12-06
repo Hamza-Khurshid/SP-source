@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_place"
+            android:icon="@drawable/ic_add_location"
+            android:title="Add Place" />
+        <item
+            android:id="@+id/nav_delete_user"
+            android:icon="@drawable/ic_delete_b"
+            android:title="Delete User" />
+        <item
+            android:id="@+id/nav_see_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Feedbacks" />
+    </group>
+
+</menu>
